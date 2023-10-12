@@ -1,0 +1,8 @@
+
+span{
+    color:orange;
+background-color: black;
+}
+#specificColor{color:crimson;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: large;}
+#specificLink{color: forestgreen;font-size: x-large;}
+span2 {background-image: radial-gradient(cyan,magenta);}
