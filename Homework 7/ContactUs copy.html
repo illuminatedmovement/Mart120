@@ -1,0 +1,52 @@
+<html>
+    <head> 
+        <title>ContactUs</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+        <script> 
+        function checkboxes() 
+        { 
+            var firstName = document.getElementById("fName").value;
+            if(firstName == "")
+            {
+                document.getElementById("fName").style.backgroundColor = "red";
+                document.getElementById("fName").focus();
+                document.getElementById("fNameMessage").innerHTML = "* Required";
+                document.getElementById("fNameMessage").style.color = "red";
+                
+                return false;
+            }
+            
+            var lastName = document.getElementById("lName").value;
+            if(lastName == "")
+            {
+                document.getElementById("lName").style.backgroundColor = "red";
+                document.getElementById("lName").focus();
+                document.getElementById("lNameMessage").innerHTML = "* Required";
+                document.getElementById("lNameMessage").style.color = "red";
+            }
+            var Email = document.getElementById("Email").value;
+            if(Email == "")
+            {
+                document.getElementById("Email").style.backgroundColor = "red";
+                document.getElementById("Email").focus();
+                document.getElementById("EmailMessage").innerHTML = "* Required";
+                document.getElementById("EmailMessage").style.color = "red";
+            }
+        }
+            </script>
+     
+
+    </head>
+    <body>
+        <form>
+            First Name: <input type="text" id="fName"><br>&nbsp;<span id="fNameMessage"></span></p>
+            Last Name: <input type="text" id="lName"><br>&nbsp;<span id="lNameMessage"></span></p>
+            Email: <input type="text" id="Email"><br>&nbsp;<span id="EmailMessage"></span></p>
+            <h2>Do you accept the terms of this agreement?</h2><br>
+            <button type="button" class="btn btn-primary" onclick="checkboxes();">Yes</button>
+            <button type="button" class="btn btn-primary" onclick="checkboxes();">No</button>
+        </form>
+        <a href="homepage.html">Go to my Homepage!</a>
+        <a href="Page2.html">Go to my 2nd Page!</a>
+    </body> 
